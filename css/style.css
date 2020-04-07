@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+html{
+	font-size:62.5%;/*16px×62.5％＝10px*/
+}
+
+body {
+  color: #ffffff;
+  font-family: 'Perpetua','Noto Sans', sans-serif;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+	font-feature-settings: "palt";
+	letter-spacing: : 0.05rem;
+}
+
+img{
+	width: 100%;
+}
+
+main{
+  background: linear-gradient(#77CFE7, #002A5E);
+	overflow: hidden;
+}
