@@ -22,3 +22,11 @@ main{
   background: linear-gradient(#77CFE7, #002A5E);
 	overflow: hidden;
 }
+
+/* header */
+.header{
+	padding: 64px 0 128px 0;
+	background-image: url(../img/bgi.jpg);
+	background-position: center;
+	background-size: 100vw auto;
+}
