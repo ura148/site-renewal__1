@@ -42,14 +42,14 @@ $(function(){
 
           }else{
 
-          }if(scrollY > eyecatchPdStart){
-            eyecatchPd.css('transform', 'translateY(' + toggle2 + 'px)'),
-            eyecatchPd.css('margin-top', 0 + eyecatchPdPosOt),
-            eyecatch.css('padding-bottom', 144 - eyecatchPdPosOt);
+          // }if(scrollY > eyecatchPdStart){
+          //   eyecatchPd.css('transform', 'translateY(' + toggle2 + 'px)'),
+          //   eyecatchPd.css('margin-top', 0 + eyecatchPdPosOt),
+          //   // eyecatch.css('padding-bottom', 144 - eyecatchPdPosOt);
+          //
+          // }else{
+          //   eyecatchPd.css('background-position','center top');
 
-          }else{
-            eyecatchPd.css('background-position','center top');
-            eyecatch.css('padding-bottom', 144);
 
           }if(scrollY > eyecatchStart){
             //"="になる時はscrollbottomと背面遅延1のY座標が同じ時、1pxスクロールすれば背面遅延が画面内に入る
