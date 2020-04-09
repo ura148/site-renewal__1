@@ -2,9 +2,12 @@ $(document).ready(function(){
   let contentsBox = $("#main-container"),
       contensHeight =contentsBox.height(),
       windowW = $(window).width();
+      main = $("#main")
 
       $("#background-effect").css("height",contensHeight);
       $(".background-effect__img").css("width",windowW * 4);
+      main.css("height",contensHeight + 160);
+
 });
 
 
