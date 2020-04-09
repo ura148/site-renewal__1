@@ -5,28 +5,45 @@ $(document).ready(function(){
 
       $("#background-effect").css("height",contensHeight);
       $(".background-effect__img").css("width",windowW * 4);
-      console.log(windowW);
+
 });
 
 
 $(function(){
-    let target1 = $("#background-effect__box"),//target1という変数に#parallax-01を代入するという変数宣言
-        targetPosOT1 = target1.offset().top,//target1のY座標を取得
+    let bgeb = $("#background-effect__box"),//target1という変数に#background-effect__boxを代入するという変数宣言
+        eyecatch = $("#eyecatch"),
+        eyecatchPd = $("#product")
+        // Y座標取得
+        bgebPosOT = bgeb.offset().top,//target1のY座標を取得
+        eyecatchPosOt = eyecatch.offset().top,
+        eyecatchPdPosOt = eyecatchPd.offset().top,
+        //
         targetFactor = 0.2,//targetFactorという変数に0.5を代入
-        windowH = $(window).height(),//window（使用している端末で表示される画面の高さ）
-        scrollYStart1 = targetPosOT1 - windowH;//背面遅延1のY座標-画面の高さ
+        windowH = $(window).height();//window（使用している端末で表示される画面の高さ）
+        //
+        bgebStart1 = bgebPosOT - windowH,//背面遅延1のY座標-画面の高さ
+        eyecatchStart = eyecatchPosOt - windowH,
+        eyecatchPdStart = eyecatchPdPosOt - windowH,
 
   $(window).on('scroll',function(){
-    let scrollY = $(this).scrollTop(),//[仮説]scrollする度のscrolltopのY座標
-         toggle = (scrollY - targetPosOT1) * targetFactor;
+    let scrollY = $(this).scrollTop(),//scrollする度のscrolltopのY座標
+        toggle = (scrollY - bgebPosOT) * targetFactor
 
-         console.log(toggle);
+          if(scrollY > bgebStart1){
+            //"="になる時はscrollbottomと背面遅延1のY座標が同じ時、1pxスクロールすれば背面遅延が画面内に入る
+            bgeb.css('transform', 'translateY(' + - toggle + 'px)');
 
-    if(scrollY > scrollYStart1){
-      //"="になる時はscrollbottomと背面遅延1のY座標が同じ時、1pxスクロールすれば背面遅延が画面内に入る
-      target1.css('transform', 'translateY(' + - toggle + 'px)');
+          }else{
 
-    }else{
-    }
+          }if(scrollY > eyecatchStart){
+            //"="になる時はscrollbottomと背面遅延1のY座標が同じ時、1pxスクロールすれば背面遅延が画面内に入る
+            eyecatch.css('background-position-y', (scrollY - eyecatchPosOt) + 'px');
+
+          }else{
+            //そうでない時は
+            eyecatch.css('background-position','center top');
+            //eyecatchのpositionを通常に戻す
+
+          }
   });
 });
