@@ -18,15 +18,47 @@ img{
 	width: 100%;
 }
 
-main{
-  background: linear-gradient(#77CFE7, #002A5E);
-	overflow: hidden;
-}
+
 
 /*  */
 .text-center{
 	text-align: center;
 }
+
+/* container */
+.container{
+	position: relative;
+
+}
+
+/* background-effect */
+
+.background-effect{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(#77CFE7, #002A5E);
+	width: 100vw;
+	overflow: hidden;
+}
+
+.background-effect__box{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.background-effect__img{
+	width: 375px;
+	opacity: 0.2;
+}
+
+/* main-container */
+.main-container{
+	position: absolute;
+}
+
+
 
 /* eyecatch */
 .eyecatch{
