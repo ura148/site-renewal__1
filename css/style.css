@@ -6,11 +6,10 @@ html{
 
 body {
   color: #ffffff;
-  font-family: 'Perpetua','Noto Sans', sans-serif;
+  font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-	font-feature-settings: "palt";
 	letter-spacing: : 0.05rem;
 }
 
@@ -20,15 +19,48 @@ img{
 
 
 
-/*  */
+/* bace */
+.inner{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 36px;
+}
+
 .text-center{
 	text-align: center;
+}
+
+.section-title__en{
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+
+.section-title__ja{
+	font-size: 3.2rem;
+	margin-bottom: 56px;
+}
+
+.section-subtitle{
+	font-size: 2.4rem;
+	margin-bottom: 24px;
+}
+
+.section__p{
+	font-size: 1.6rem;
+	letter-spacing: -0.004em;
+	line-height: 1.3125;
+	margin-bottom: 16px;
+}
+
+.flex{
+	display: flex;
 }
 
 /* container */
 .container{
 	position: relative;
-
+	background: linear-gradient(#77CFE7, #002A5E);
 }
 
 /* background-effect */
@@ -37,7 +69,6 @@ img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: linear-gradient(#77CFE7, #002A5E);
 	width: 100vw;
 	overflow: hidden;
 }
@@ -55,7 +86,9 @@ img{
 
 /* main-container */
 .main-container{
+	width: 100%;
 	position: absolute;
+	padding: 80px 0;
 }
 
 
@@ -76,4 +109,72 @@ img{
 
 .eyecatch-product{
 	position:
+}
+
+
+/* reason */
+.reason.inner{
+	padding: 0;
+	margin: 176px 0 112px 0;
+}
+
+.reason .flex{
+	flex-shrink: 0;
+	justify-content: space-between;
+}
+
+.reason-list{
+	padding-left: 36px;
+	width: 62%;
+}
+
+.reason-product{
+	margin: 0 0 0 24px;
+	max-width: 81px;
+}
+
+.reason .section-title__en{
+	margin-left: 36px;
+}
+
+.reason .section-title__ja{
+	margin-left: 36px;
+}
+
+.section__p.last-p{
+	margin-bottom: 96px;
+}
+
+.section__p.last-p:last-of-type{
+	margin-bottom: 24px;
+}
+
+/* effect */
+.effect{
+	background-image: url(../img/effect-bgi__sp.jpg);
+	background-size: cover;
+	background-position:center;
+}
+
+.effect .inner{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+/* for you */
+.inner.for-you{
+	margin-top: 112px;
+}
+
+.for-you .flex{
+	flex-direction: column;
+}
+
+.for-you__img{
+	width: 218px;
+}
+
+/* footer */
+.footer{
+	background-color: #00123A;
 }

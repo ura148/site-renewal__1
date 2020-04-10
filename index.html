@@ -7,6 +7,16 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'faz6qhj',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+  </script>
 </head>
 <body>
   <header class="header">
@@ -16,9 +26,11 @@
     <h1 class="eyecatch-title text-center">mare water</h1>
     <img src="./img/product__sp.png" alt="" class="product" id="product">
   </div>
-  <main class="container">
+  <main class="container" id="main">
     <div class="background-effect" id="background-effect">
       <div class="background-effect__box" id="background-effect__box">
+        <img src="./img/bubble2.png" alt="" class="background-effect__img">
+        <img src="./img/bubble2.png" alt="" class="background-effect__img">
         <img src="./img/bubble2.png" alt="" class="background-effect__img">
         <img src="./img/bubble2.png" alt="" class="background-effect__img">
         <img src="./img/bubble2.png" alt="" class="background-effect__img">
@@ -26,68 +38,120 @@
       </div>
     </div>
     <div class="main-container" id="main-container">
-      <section>
-        <p>concept</p>
+      <section class="inner">
+        <p class="section-title__en">concept</p>
 
-        <h2>お肌に伊豆半島の<br>豊かな恵みを</h2>
+        <h2 class="section-title__ja">お肌に伊豆半島の<br>豊かな恵みを</h2>
 
-        <p>伊豆半島周辺にはおよそ1500種類の海藻が生息していると言われています。</p>
+        <p class="section__p">伊豆半島周辺にはおよそ1500種類の海藻が生息していると言われています。</p>
 
-        <p>「この伊豆半島周辺の豊富な海藻資源から天然由来の誰もが安心して使える化粧品を作れないか」</p>
+        <p class="section__p">「この伊豆半島周辺の豊富な海藻資源から天然由来の誰もが安心して使える化粧品を作れないか」</p>
 
-        <p>そんな思いから生まれたのが無添加化粧水MARE WATERです。</p>
+        <p class="section__p">そんな思いから生まれたのが無添加化粧水MARE WATERです。</p>
 
       </section>
 
-      <section>
-        <p>reason</p>
-        <h2>安心して使える<br>3つの理由</h2>
-          <h3>無添加へのこだわり</h3>
-          <p>界面活性剤、鉱物油、アルコール、香料、着色料不使用</p>
-          <p>これら全てMARE WATERでは一切使用しておりません</p>
+      <section class="inner reason">
+        <p class="section-title__en">reason</p>
+        <h2 class="section-title__ja">安心して使える<br>3つの理由</h2>
 
-          <h3>天然素材を配合</h3>
-          <p>コンブやアオノリといった海の天然資源を使用</p>
-          <p>自然本来の保湿能力であなたのお肌の潤いを保ちます。</p>
+        <div class="flex">
+          <div class="reason-list">
+            <h3 class="section-subtitle">無添加へのこだわり</h3>
+            <p class="section__p">界面活性剤、鉱物油、アルコール、香料、着色料不使用</p>
+            <p class="section__p last-p">これら全てMARE WATERでは一切使用しておりません</p>
 
-          <h3>いつでも使える</h3>
-          <p>ミストタイプのボトルデザインを採用</p>
-          <p>外出先でもメイクの上から使えるため、日中の保湿も行えます。</p>
+            <h3 class="section-subtitle">天然素材を配合</h3>
+            <p class="section__p">コンブやアオノリといった海の天然資源を使用</p>
+            <p class="section__p last-p">自然本来の保湿能力であなたのお肌の潤いを保ちます。</p>
 
-          <img src="./img/mare-water.png" alt="">
-        <div>
+            <h3 class="section-subtitle">いつでも使える</h3>
+            <p class="section__p">ミストタイプのボトルデザインを採用。</p>
+            <p class="section__p last-p">外出先でもメイクの上から使え、日中の保湿も行えます。</p>
+          </div>
+
+          <div class="reason-product">
+            <img src="./img/mare-water-harf.png" alt="">
+          </div>
+        </div>
+
+
+
+
+        <div class="text-center">
           <p>mare waterを購入する</p>
         </div>
       </section>
 
-      <section>
-        <p>effect</p>
-        <h2>海洋保湿成分が<br>もたらす潤い</h2>
+      <section class="effect">
+        <div class="inner">
+          <p class="section-title__en">effect</p>
+          <h2 class="section-title__ja">海洋保湿成分が<br>もたらす潤い</h2>
 
-        <p>MARE WATERは天然の海洋保湿成分を豊富に含んでおります。</p>
+          <p class="section__p">MARE WATERは天然の海洋保湿成分を豊富に含んでおります。</p>
 
-        <p>注目の成分は【プロテオグリカン】</p>
+          <p class="section__p">注目の成分は【プロテオグリカン】</p>
 
-        <p>プロテオグリカンは保湿成分はもちろん、肌荒れ改善や肌弾力の増加、シワ改善など様々な効果があります。</p>
+          <p class="section__p">プロテオグリカンは保湿成分はもちろん、肌荒れ改善や肌弾力の増加、シワ改善など様々な効果があります。</p>
+        </div>
       </section>
 
-      <section>
-        <p>for you</p>
-        <h2>こんな方におすすめです</h2>
+      <section class="inner for-you">
 
-        <img src="./img/for-you__1.png" alt="">
-        <p>敏感肌の方</p>
-        <img src="./img/for-you__2.png" alt="">
-        <p>お子さんに使いたい方</p>
-        <img src="./img/for-you__3.png" alt="">
-        <p>オーガニックをお求めの方</p>
-        <img src="./img/for-you__4.png" alt="">
-        <p>お肌に潤いを求める方</p>
+        <p class="section-title__en">for you</p>
+        <h2 class="section-title__ja">こんな方に<br>おすすめです</h2>
+
+        <ul class="flex">
+          <li>
+            <img src="./img/for-you__1.png" alt="" class="for-you__img">
+            <p class="section__p for-you__p">敏感肌の方</p>
+          </li>
+          <li>
+            <img src="./img/for-you__2.png" alt="" class="for-you__img">
+            <p class="section__p for-you__p">お子さんに使いたい方</p>
+          </li>
+          <li>
+            <img src="./img/for-you__3.png" alt="" class="for-you__img">
+            <p class="section__p for-you__p">オーガニックをお求めの方</p>
+          </li>
+          <li>
+            <img src="./img/for-you__4.png" alt="" class="for-you__img">
+            <p class="section__p for-you__p">お肌に潤いを求める方</p>
+          </li>
+        </ul>
+
       </section>
-      <section></section>
+
+      <section class="inner">
+        <p>お肌に自然の恵みを</p>
+        <p>mare water</p>
+
+        <img src="./img/mare-water.png" alt="">
+
+
+
+        <div class="text-center">
+          <p>mare waterを購入する</p>
+        </div>
+
+      </section>
     </div>
   </main>
-  <footer>
+
+  <footer class="footer">
+    <p>mare water</p>
+
+    <p>uraura Online Shop</p>
+
+    <p>お問い合わせ</p>
+
+    <span></span>
+    <span></span>
+
+    <p>株式会社uraura company</p>
+    <p>〒104-0061 東京都中央区銀座6丁目10-1</p>
+
+    <small>Copyright© 2020 uramura All Rights Reserved.</small>
 
   </footer>
 
