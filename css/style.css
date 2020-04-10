@@ -19,7 +19,9 @@ img{
 
 
 
-/* bace */
+/*＝＝＝＝＝＝＝＝＝＝
+bace
+＝＝＝＝＝＝＝＝＝＝＝*/
 .inner{
 	width: 100%;
 	box-sizing: border-box;
@@ -68,12 +70,30 @@ img{
 	font-size: 2rem;
 	text-transform: uppercase;
 }
-/* sns */
+/*＝＝＝＝＝＝＝＝＝＝
+sns
+＝＝＝＝＝＝＝＝＝＝＝*/
 .sns{
 	font-size: 3.2rem;
 }
 
-/* btn */
+.sns-area>a{
+	color: #ffffff;
+}
+
+a>.sns:first-of-type{
+	margin-right: 16px;
+}
+
+a>.sns:last-of-type{
+	margin-left: 16px;
+}
+
+
+
+/*＝＝＝＝＝＝＝＝＝＝
+btn
+＝＝＝＝＝＝＝＝＝＝＝*/
 
 .btn{
 	padding: 6px 0 2px;
@@ -89,16 +109,144 @@ img{
 	color: #fff;
 }
 
-/* /btn */
+.btn-trigger{
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 34px;
+	height: 28px;
+	z-index: 50;
+}
 
-/* container */
+.btn-menu{
+	font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
+	letter-spacing: 0.07rem;
+	display: block;
+	position: absolute;
+	line-height: 1rem;
+	color: #ffffff;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	top: 15px;
+}
+
+.btn-trigger .menu{
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+.btn-trigger .close{
+	display: block;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+.btn-trigger.active .menu{
+	opacity: 0;
+}
+
+.btn-trigger.active .close{
+	font-size: 1.1rem;
+	opacity: 1;
+	top: 24px;
+}
+
+
+.btn-nav-line{
+	position: absolute;
+  display: block;
+  width: 34px;
+  height: 2px;
+	border-radius: 1px;
+  background-color: #ffffff;
+	transition: all 0.5s;
+}
+
+.btn-nav-line:first-of-type{
+	top: 0;
+}
+
+.btn-nav-line:nth-child(2){
+	top: 7px;
+}
+
+.btn-trigger.active .btn-nav-line:first-of-type{
+	transform: rotate(45deg) ;
+	top: 9px;
+}
+
+.btn-trigger.active .btn-nav-line:nth-child(2){
+	transform: rotate(-45deg) ;
+	top: 9px;
+}
+
+
+/*＝＝＝＝＝＝＝＝＝＝
+header
+＝＝＝＝＝＝＝＝＝＝＝*/
+.header{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝
+navigation
+＝＝＝＝＝＝＝＝＝＝＝*/
+.header-nav{
+	padding-top: 92px;
+	width: 100%;
+	height: 120vh;
+	background-color: rgba(0,9,44,0.8);
+	display: none;
+}
+
+.nav-list{
+	text-align: center;
+}
+
+.nav-item{
+	margin-bottom: 44px;
+	height: 16px;
+}
+
+.nav-item:nth-of-type(5){
+	margin-bottom: 24px;
+}
+
+.nav-item>a{
+	color: #ffffff;
+	font-size: 2.4rem;
+	text-transform: uppercase;
+}
+
+.nav-separate{
+	display: block;
+	margin: 0 auto 24px;
+	border: 1px solid #707070;
+	width: 80%;
+}
+
+
+/*＝＝＝＝＝＝＝＝＝＝
+container
+＝＝＝＝＝＝＝＝＝＝＝*/
 .container{
 	position: relative;
 	background: linear-gradient(#77CFE7, #002A5E);
 	font-weight: 1.6rem;
+	z-index: 1;
 }
 
-/* background-effect */
+.main-container{
+	width: 100%;
+	position: absolute;
+	padding: 80px 0;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝
+background-effect
+＝＝＝＝＝＝＝＝＝＝＝*/
 
 .background-effect{
 	position: absolute;
@@ -118,14 +266,6 @@ img{
 	width: 375px;
 	opacity: 0.2;
 }
-
-/* main-container */
-.main-container{
-	width: 100%;
-	position: absolute;
-	padding: 80px 0;
-}
-
 
 
 /* eyecatch */
