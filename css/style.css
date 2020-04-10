@@ -282,9 +282,14 @@ background-effect
 	text-transform: uppercase;
 }
 
-.eyecatch-product{
-	position:
+/* .product-box{
+	position: relative;
 }
+
+.product{
+	position: absolute;
+	top: 0;
+} */
 
 
 /* reason */
