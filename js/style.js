@@ -1,4 +1,5 @@
-$(window).on('scroll',function(){
+$(window).resize(function(){
+
   let contentsBox = $("#main-container"),
       contensHeight =contentsBox.height(),
       windowW = $(window).width();
