@@ -47,6 +47,8 @@ img{
 }
 
 .section__p{
+	font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
+	color: #ffffff;
 	font-size: 1.6rem;
 	letter-spacing: -0.004em;
 	line-height: 1.3125;
@@ -57,10 +59,43 @@ img{
 	display: flex;
 }
 
+.name{
+	font-size: 3.2rem;
+	text-transform: uppercase;
+}
+
+.en{
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+/* sns */
+.sns{
+	font-size: 3.2rem;
+}
+
+/* btn */
+
+.btn{
+	padding: 6px 0 2px;
+	margin: 0 auto;
+	border: 1px solid #ffffff;
+	width: 269px;
+}
+
+.btn span{
+	font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* /btn */
+
 /* container */
 .container{
 	position: relative;
 	background: linear-gradient(#77CFE7, #002A5E);
+	font-weight: 1.6rem;
 }
 
 /* background-effect */
@@ -163,18 +198,75 @@ img{
 
 /* for you */
 .inner.for-you{
+	margin: 112px 0 176px;
 	margin-top: 112px;
+
 }
 
 .for-you .flex{
 	flex-direction: column;
+
 }
 
 .for-you__img{
+	display: block;
+	margin: 0 auto 12px;
 	width: 218px;
+}
+
+.for-you li{
+	display: block;
+	margin: 0 auto 32px;
+}
+
+.for-you .section__p{
+	font-size: 2rem;
+}
+
+/* ProdInfo */
+.ProdInfo img{
+	width: 26.1467%;
+	margin-bottom: 20px;
+}
+
+.ProdInfo .section-title__ja{
+	margin-bottom: 0;
+}
+
+.ProdInfo .name{
+	margin: 32px auto 56px;
+}
+
+.ProdInfo-detail{
+	font-family: 'a-otf-ryumin-pr6n', sans-serif;
+	font-size: 2.4rem;
+}
+
+.ProdInfo-detail:first-of-type{
+	margin-right: 20px;
+}
+
+.ProdInfo .btn{
+	margin-top: 48px;
 }
 
 /* footer */
 .footer{
 	background-color: #00123A;
+}
+
+.footer.inner{
+	padding: 32px 0 16px;
+}
+
+.footer .name{
+	margin-bottom: 32px;
+}
+
+.footer .sns-area{
+	margin: 32px 0;
+}
+
+.footer .company{
+	margin-bottom: 32px;
 }
