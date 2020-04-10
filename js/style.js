@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on('scroll',function(){
   let contentsBox = $("#main-container"),
       contensHeight =contentsBox.height(),
       windowW = $(window).width();
@@ -33,7 +33,7 @@ $(function(){
     let scrollY = $(this).scrollTop(),//scrollする度のscrolltopのY座標
 
         toggle = (scrollY - bgebPosOT) * targetFactor
-        toggle2 = (scrollY - eyecatchPdPosOt)
+        toggle2 = (scrollY - eyecatchPdPosOt + 174)
 
 
 
@@ -43,13 +43,17 @@ $(function(){
 
           }else{
 
-          // }if(scrollY > eyecatchPdStart){
-          //   eyecatchPd.css('transform', 'translateY(' + toggle2 + 'px)'),
-          //   eyecatchPd.css('margin-top', 0 + eyecatchPdPosOt),
-          //   // eyecatch.css('padding-bottom', 144 - eyecatchPdPosOt);
-          //
-          // }else{
-          //   eyecatchPd.css('background-position','center top');
+          }if(scrollY > eyecatchPdStart){
+            eyecatchPd.css('transform', 'translateY(' + toggle2 + 'px)');
+
+            // eyecatchPd.css('margin-top', 0 + eyecatchPdPosOt),
+            // eyecatch.css('padding-bottom', 144 - eyecatchPdPosOt);
+
+          }else{
+            eyecatchPd.css('background-position','center top');
+
+
+
 
 
           }if(scrollY > eyecatchStart){
