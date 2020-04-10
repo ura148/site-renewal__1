@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on('scroll',function(){
   let contentsBox = $("#main-container"),
       contensHeight =contentsBox.height(),
       windowW = $(window).width();
@@ -45,7 +45,7 @@ $(function(){
 
           }if(scrollY > eyecatchPdStart){
             eyecatchPd.css('transform', 'translateY(' + toggle2 + 'px)');
-            
+
             // eyecatchPd.css('margin-top', 0 + eyecatchPdPosOt),
             // eyecatch.css('padding-bottom', 144 - eyecatchPdPosOt);
 
