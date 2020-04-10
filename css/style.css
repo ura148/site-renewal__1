@@ -274,6 +274,7 @@ background-effect
 	background-image: url(../img/top-bgi__sp.jpg);
 	background-size: cover;
 	background-position:center;
+	overflow: hidden;
 }
 
 .eyecatch-title{
