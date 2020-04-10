@@ -29,8 +29,6 @@ $(function(){
         //
 
 
-
-
   $(window).on('scroll',function(){
     let scrollY = $(this).scrollTop(),//scrollする度のscrolltopのY座標
 
@@ -65,4 +63,25 @@ $(function(){
             //eyecatchのpositionを通常に戻す
           }
   });
+});
+
+$(".btn-trigger").on("touchstart",function(){
+  $(this).toggleClass("active");
+  // $(".header-nav").toggleClass("dn");
+  $(".header-nav").fadeToggle(500);
+});
+
+
+$('a[href^="#"]').click(function() {
+  // スクロールの速度
+  let adjust = 50;
+      speed = 800; // ミリ秒で記述
+      href = $(this).attr("href");
+      target = $(href == "#" || href == "" ? 'html' : href);
+      position = target.offset().top - adjust;
+
+  $('body,html').animate({
+    scrollTop: position
+  }, speed, 'swing');
+  return false;
 });
