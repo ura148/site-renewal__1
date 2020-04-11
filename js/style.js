@@ -1,5 +1,4 @@
-$(window).resize(function(){
-
+$(window).on('load',function(){
   let contentsBox = $("#main-container"),
       contensHeight =contentsBox.height(),
       windowW = $(window).width();
@@ -8,7 +7,6 @@ $(window).resize(function(){
       $("#background-effect").css("height",contensHeight);
       $(".background-effect__img").css("width",windowW * 4);
       main.css("height",contensHeight + 160);
-
 });
 
 

@@ -418,3 +418,34 @@ background-effect
 .footer .company{
 	margin-bottom: 32px;
 }
+
+
+@media screen and (min-width:768px){
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	eyecatch
+	＝＝＝＝＝＝＝＝＝＝＝*/
+
+	.eyecatch{
+		background-image: url(../img/top-bgi.jpg);
+	}
+
+	.product{
+		display: block;
+		margin: 0 auto;
+		width: 54.5%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
