@@ -5,8 +5,15 @@ $(window).on('load',function(){
       main = $("#main")
 
       $("#background-effect").css("height",contensHeight);
-      $(".background-effect__img").css("width",windowW * 4);
       main.css("height",contensHeight + 160);
+
+        if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+          $(".background-effect__img").css("width",windowW * 4);
+        }else{
+        }
+
+
+
 });
 
 
@@ -33,6 +40,7 @@ $(function(){
 
         toggle = (scrollY - bgebPosOT) * targetFactor
         toggle2 = (scrollY - eyecatchPdPosOt + 174)
+        // toggle3
 
 
 
