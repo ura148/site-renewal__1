@@ -6,7 +6,7 @@ html{
 
 body {
   color: #ffffff;
-  font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
+  font-family: 'Perpetua','ヒラギノ明朝 ProN W3','a-otf-ryumin-pr6n', sans-serif;
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
@@ -26,6 +26,11 @@ bace
 	width: 100%;
 	box-sizing: border-box;
 	padding: 0 36px;
+}
+
+.reason.inner{
+	padding: 0;
+	margin: 176px 0 112px 0;
 }
 
 .text-center{
@@ -49,7 +54,7 @@ bace
 }
 
 .section__p{
-	font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
+	font-family: 'Perpetua','ヒラギノ明朝 ProN W3','a-otf-ryumin-pr6n', sans-serif;
 	color: #ffffff;
 	font-size: 1.6rem;
 	letter-spacing: -0.004em;
@@ -61,7 +66,7 @@ bace
 	display: flex;
 }
 
-.name{
+.footer-name{
 	font-size: 3.2rem;
 	text-transform: uppercase;
 }
@@ -69,6 +74,11 @@ bace
 .en{
 	font-size: 2rem;
 	text-transform: uppercase;
+}
+
+.img__pc{
+	opacity: 0;
+	display: none;
 }
 /*＝＝＝＝＝＝＝＝＝＝
 sns
@@ -249,7 +259,6 @@ container
 /*＝＝＝＝＝＝＝＝＝＝
 background-effect
 ＝＝＝＝＝＝＝＝＝＝＝*/
-
 .background-effect{
 	position: absolute;
 	top: 0;
@@ -265,7 +274,6 @@ background-effect
 }
 
 .background-effect__img{
-	width: 375px;
 	opacity: 0.2;
 }
 
@@ -296,11 +304,6 @@ background-effect
 
 
 /* reason */
-.reason.inner{
-	padding: 0;
-	margin: 176px 0 112px 0;
-}
-
 .reason .flex{
 	flex-shrink: 0;
 	justify-content: space-between;
@@ -340,20 +343,17 @@ background-effect
 }
 
 .effect .inner{
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding: 80px 36px;
 }
 
 /* for you */
 .inner.for-you{
 	margin: 112px 0 176px;
 	margin-top: 112px;
-
 }
 
 .for-you .flex{
 	flex-direction: column;
-
 }
 
 .for-you__img{
@@ -362,7 +362,7 @@ background-effect
 	width: 218px;
 }
 
-.for-you li{
+.for-you-list{
 	display: block;
 	margin: 0 auto 32px;
 }
@@ -372,9 +372,14 @@ background-effect
 }
 
 /* ProdInfo */
-.ProdInfo img{
+.Product__img{
 	width: 26.1467%;
+	height: auto;
 	margin-bottom: 20px;
+}
+
+.ProdInfo .flex{
+	display: block;
 }
 
 .ProdInfo .section-title__ja{
@@ -395,6 +400,7 @@ background-effect
 }
 
 .ProdInfo .btn{
+	box-sizing: border-box;
 	margin-top: 48px;
 }
 
@@ -417,4 +423,251 @@ background-effect
 
 .footer .company{
 	margin-bottom: 32px;
+}
+
+
+@media screen and (min-width:769px){
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	bace
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.inner{
+		box-sizing: border-box;
+		padding: 0 160px ;
+		margin: 96px auto;
+		width: 100%;
+		max-width: 1280px;
+	}
+
+	#concept.inner{
+		padding-top: 184px;
+		margin-top: 0;
+	}
+
+	.reason.inner{
+		padding: 0 160px;
+		margin: 96px auto;
+	}
+
+	.effect .inner{
+		padding: 96px 160px;
+	}
+
+	.inner.for-you{
+		margin: 112px auto 184px;
+		margin-top: 112px;
+	}
+
+	.footer.inner{
+		max-width: 100%;
+	}
+
+	.text-right{
+		text-align: right;
+	}
+
+	.section-title__en{
+		font-size: 5.6rem;
+		text-transform: uppercase;
+		margin-bottom: 56px;
+	}
+
+	.section-title__ja{
+		letter-spacing: 0.088em;
+		line-height: 1.1388;
+		font-size: 7.2rem;
+		margin-bottom: 96px;
+	}
+
+	.section-subtitle{
+		font-size: 4rem;
+	}
+
+	.text-right{
+	text-align: right;
+}
+
+	.section__p{
+		font-size: 2rem;
+		letter-spacing: 0.007em;
+		line-height: 1.05;
+		margin-bottom: 16px;
+	}
+
+	.img__sp{
+		display: none;
+	}
+
+	.img__pc{
+		opacity: 1;
+		display: block;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	sns
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.sns{
+		font-size: 5.6rem;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	btn
+	＝＝＝＝＝＝＝＝＝＝＝*/
+
+	.btn{
+		padding: 6px 0 2px;
+		margin: 0 auto;
+		border: 1px solid #ffffff;
+		width: 269px;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	container
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	/* .container{
+		position: relative;
+		background: linear-gradient(#77CFE7, #002A5E);
+		font-weight: 1.6rem;
+		z-index: 1;
+		overflow: hidden;
+	} */
+
+	.main-container{
+		width: 100%;
+		position: absolute;
+		padding: 0 0 0;
+		overflow: hidden;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	eyecatch
+	＝＝＝＝＝＝＝＝＝＝＝*/
+
+	.eyecatch{
+		background-image: url(../img/top-bgi.jpg);
+	}
+
+	.eyecatch-title{
+		font-size: 6.4rem;
+		margin-bottom: 64px;
+	}
+
+	.product{
+		display: block;
+		margin: 0 auto;
+		width: 54.5%;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	reason
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.reason .section-title__en{
+		margin-left: 0;
+	}
+
+	.reason .section-title__ja{
+		margin-left: 0;
+	}
+
+	.reason-list{
+		padding-left: 0;
+	}
+
+	.reason-product__img{
+		width: auto;
+	}
+
+	.reason .flex{
+		padding-bottom: 48px;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	effect
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.effect{
+		background-image: url(../img/effect-bgi__pc.jpg);
+		background-position: bottom;
+	}
+
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	for you
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.for-you .flex{
+		flex-direction:row;
+	}
+
+	.for-you .section-title__ja{
+		transform: translateX(-15px);
+	}
+
+	.for-you-list{
+		margin: 0 24px 0 0;
+		width: 24.5%;
+		max-width: 218px;
+	}
+
+	.for-you-list:last-of-type{
+		margin-right: 0;
+	}
+
+	.for-you .section__p{
+		font-size: 1.8rem;
+		margin-bottom: 0;
+	}
+
+	.for-you__img{
+		display: block;
+		width: 100%;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	ProdInfo
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.ProdInfo .flex{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.ProdInfo-text{
+		text-align: left;
+		width: 80%;
+	}
+
+	.ProdInfo-text .section__p:nth-child(n+3){
+		margin-bottom: 88px;
+	}
+
+	.ProdInfo-component{
+		font-size: 2.4rem;
+		margin-bottom: 20px;
+	}
+
+	.Product__img{
+		margin-bottom: 0;
+		width: auto;
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝
+	footer
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.footer{
+		padding: 96px 0 16px;
+	}
+
+	.footer-name{
+		line-height: 0.63;
+		font-size: 6.4rem;
+		margin-bottom: 56px;
+	}
+
+
+
+
+
+
+
+
+
+
 }

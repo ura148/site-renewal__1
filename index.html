@@ -113,22 +113,23 @@
 
 
         <div class="flex">
-          <div class="reason-list">
+          <div class="reason-list" id="reason-list">
             <h3 class="section-subtitle">無添加へのこだわり</h3>
             <p class="section__p">界面活性剤、鉱物油、アルコール、香料、着色料不使用</p>
             <p class="section__p last-p">これら全てMARE WATERでは一切使用しておりません</p>
 
-            <h3 class="section-subtitle">天然素材を配合</h3>
-            <p class="section__p">コンブやアオノリといった海の天然資源を使用</p>
-            <p class="section__p last-p">自然本来の保湿能力であなたのお肌の潤いを保ちます。</p>
+            <h3 class="section-subtitle text-right">天然素材を配合</h3>
+            <p class="section__p text-right">コンブやアオノリといった海の天然資源を使用</p>
+            <p class="section__p last-p text-right">自然本来の保湿能力であなたのお肌の潤いを保ちます</p>
 
             <h3 class="section-subtitle">いつでも使える</h3>
             <p class="section__p">ミストタイプのボトルデザインを採用。</p>
-            <p class="section__p last-p">外出先でもメイクの上から使え、日中の保湿も行えます。</p>
+            <p class="section__p last-p" id="reason-text-last">外出先でもメイクの上から使え、日中の保湿も行えます</p>
           </div>
 
-          <div class="reason-product">
-            <img src="./img/mare-water-harf.png" alt="">
+          <div class="reason-product" id="reason-product">
+            <img src="./img/mare-water-harf.png" alt="" class="img__sp">
+            <img src="./img/mare-water.png" alt="" class="img__pc reason-product__img" id="reason-product__img">
           </div>
         </div>
 
@@ -149,7 +150,8 @@
 
           <p class="section__p">注目の成分は【プロテオグリカン】</p>
 
-          <p class="section__p">プロテオグリカンは保湿成分はもちろん、肌荒れ改善や肌弾力の増加、シワ改善など様々な効果があります。</p>
+          <p class="section__p">プロテオグリカンは保湿成分はもちろん、肌荒れ改善や<br>
+            肌弾力の増加、シワ改善など様々な効果があります。</p>
         </div>
       </section>
 
@@ -184,21 +186,28 @@
         <h2 class="section-title__ja">お肌に自然の恵みを</h2>
         <p class="name">mare water</p>
 
-        <img src="./img/mare-water.png" alt="">
+        <div class="flex">
+          <img src="./img/mare-water.png" alt="" class="Product__img" id="Product__img">
 
-        <p class="section__p">どんな方でも安心して使える。</p>
+          <div class="ProdInfo-text" id="ProdInfo-text-area">
+            <p class="section__p" id="ProdInfo-txt">どんな方でも安心して使える。</p>
 
-        <p class="section__p">どんな時でもお肌に潤いをもたらす。</p>
+            <p class="section__p">どんな時でもお肌に潤いをもたらす。</p>
 
-        <p class="section__p">MARE WATERは皆さんの毎日に<br>潤いと健康を提供します。</p>
+            <p class="section__p">MARE WATERは皆さんの毎日に潤いと健康を提供します。</p>
 
-        <span class="ProdInfo-detail">200ml</span>
-        <span class="ProdInfo-detail">2,800円+税</span>
+            <h4 class="ProdInfo-component">海洋保湿成分</h4>
+            <p class="section__p">ヒバマタエキス・スギノリ/ミツイシコンブ/ウズバアオノリエキス・クラドシホンノバエカレドニアエ多糖体・サガラメエキス・コトジツノマタ/ミツイシコンブ/ヒトエグサ葉状体エキス</p>
 
-        <div class="btn text-center">
-          <a href="">
-            <span><span class="en">mare water</span>を購入する</span>
-          </a>
+            <span class="ProdInfo-detail">200ml</span>
+            <span class="ProdInfo-detail">2,800円+税</span>
+
+            <div class="btn text-center" id="ProdInfo__btn">
+              <a href="">
+                <span><span class="en">mare water</span>を購入する</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -206,8 +215,8 @@
     </div>
   </main>
 
-  <footer class="footer inner text-center">
-    <p class="name">mare water</p>
+  <footer class="footer text-center">
+    <p class="footer-name">mare water</p>
 
     <a href="">
       <p class="section__p"><span class="en">uraura Online Shop</span></p>
@@ -229,7 +238,7 @@
 
   </footer>
 
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./js/style.js"></script>
 </body>
 </html>
