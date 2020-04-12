@@ -5,6 +5,8 @@ html{
 }
 
 body {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
   color: #ffffff;
   font-family: 'Perpetua','ヒラギノ明朝 ProN W3','a-otf-ryumin-pr6n', sans-serif;
   font-size: 1.6rem;
@@ -35,6 +37,10 @@ bace
 
 .text-center{
 	text-align: center;
+}
+
+.p__pc{
+	display: none;
 }
 
 .section-title__en{
@@ -120,12 +126,16 @@ btn
 }
 
 .btn-trigger{
+	-webkit-appearance: none;
+	display: block;
 	position: absolute;
 	top: 16px;
 	right: 16px;
 	width: 34px;
 	height: 28px;
 	z-index: 50;
+
+
 }
 
 .btn-menu{
@@ -141,6 +151,7 @@ btn
 }
 
 .btn-trigger .menu{
+	width: 34px;
 	opacity: 1;
 	transition: all 0.5s;
 }
@@ -388,6 +399,8 @@ background-effect
 
 .ProdInfo .name{
 	margin: 32px auto 56px;
+	font-size: 3.2rem;
+	text-transform: uppercase;
 }
 
 .ProdInfo-detail{
@@ -397,6 +410,10 @@ background-effect
 
 .ProdInfo-detail:first-of-type{
 	margin-right: 20px;
+}
+
+.ProdInfo-component{
+	display: none;
 }
 
 .ProdInfo .btn{
@@ -460,6 +477,10 @@ background-effect
 
 	.footer.inner{
 		max-width: 100%;
+	}
+
+	.p__pc{
+		display: block;
 	}
 
 	.text-right{
@@ -629,9 +650,20 @@ background-effect
 		flex-direction: row-reverse;
 	}
 
+	.ProdInfo .name{
+		margin: 36px auto 120px;
+		font-size: 6.4rem;
+		text-transform: uppercase;
+		line-height: 0.8;
+	}
+
 	.ProdInfo-text{
 		text-align: left;
 		width: 80%;
+	}
+
+	.ProdInfo .section-title__ja{
+		line-height: 0.8;
 	}
 
 	.ProdInfo-text .section__p:nth-child(n+3){
