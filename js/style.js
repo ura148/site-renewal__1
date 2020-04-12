@@ -106,24 +106,24 @@ $(function(){
 // ==============================
 // メニューボタンの設定
 //
-$(".btn-trigger").on("touchstart",function(){
+$(".btn-trigger").on("click",function(){
   $(this).toggleClass("active");
   // $(".header-nav").toggleClass("dn");
   $(".header-nav").fadeToggle(500);
 });
 
-
-
+$(".nav-link").on("click",function(){
+  $(".btn-trigger").toggleClass("active");
+  $(".header-nav").fadeToggle(500);
+});
 //
 //
 // ===============================
-
 
 
 // ===============================
 // ページ内リンクの設定
-//
-
+// 
 $('a[href^="#"]').click(function() {
   // スクロールの速度
   let adjust = 50;
@@ -137,3 +137,6 @@ $('a[href^="#"]').click(function() {
   }, speed, 'swing');
   return false;
 });
+//
+//
+// ===============================
