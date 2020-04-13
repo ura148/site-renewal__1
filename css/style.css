@@ -304,14 +304,10 @@ background-effect
 	text-transform: uppercase;
 }
 
-/* .product-box{
-	position: relative;
-}
-
-.product{
+/* .product{
 	position: absolute;
 	top: 0;
-} */
+}  */
 
 
 /* reason */
@@ -423,15 +419,12 @@ background-effect
 
 /* footer */
 .footer{
+	padding: 32px 0 16px;
 	background-color: #00123A;
 }
 
-.footer.inner{
-	padding: 32px 0 16px;
-}
-
-.footer .name{
-	margin-bottom: 32px;
+.footer-name{
+	margin: 0 0 32px 0;
 }
 
 .footer .sns-area{
@@ -441,7 +434,6 @@ background-effect
 .footer .company{
 	margin-bottom: 32px;
 }
-
 
 @media screen and (min-width:769px){
 
@@ -545,14 +537,6 @@ background-effect
 	/*＝＝＝＝＝＝＝＝＝＝
 	container
 	＝＝＝＝＝＝＝＝＝＝＝*/
-	/* .container{
-		position: relative;
-		background: linear-gradient(#77CFE7, #002A5E);
-		font-weight: 1.6rem;
-		z-index: 1;
-		overflow: hidden;
-	} */
-
 	.main-container{
 		width: 100%;
 		position: absolute;
@@ -570,13 +554,13 @@ background-effect
 
 	.eyecatch-title{
 		font-size: 6.4rem;
-		margin-bottom: 64px;
+		margin-bottom: 28px;
 	}
 
 	.product{
 		display: block;
 		margin: 0 auto;
-		width: 54.5%;
+		width: 50%;
 	}
 
 	/*＝＝＝＝＝＝＝＝＝＝
@@ -647,6 +631,7 @@ background-effect
 	＝＝＝＝＝＝＝＝＝＝＝*/
 	.ProdInfo .flex{
 		display: flex;
+		justify-content: space-between;
 		flex-direction: row-reverse;
 	}
 
@@ -658,8 +643,9 @@ background-effect
 	}
 
 	.ProdInfo-text{
+		margin-left: 9.1%;
 		text-align: left;
-		width: 80%;
+		width: 54.79166%;
 	}
 
 	.ProdInfo .section-title__ja{
@@ -671,12 +657,13 @@ background-effect
 	}
 
 	.ProdInfo-component{
+		display: block;
 		font-size: 2.4rem;
 		margin-bottom: 20px;
 	}
 
 	.Product__img{
-		margin-bottom: 0;
+		margin: 0 9.1% 0;
 		width: auto;
 	}
 
