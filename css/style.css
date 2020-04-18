@@ -8,7 +8,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
   color: #ffffff;
-  font-family: 'Perpetua','ヒラギノ明朝 ProN W3','a-otf-ryumin-pr6n', sans-serif;
+  font-family: 'brigade','a-otf-ryumin-pr6n', sans-serif;
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
@@ -30,11 +30,6 @@ bace
 	padding: 0 36px;
 }
 
-.reason.inner{
-	padding: 0;
-	margin: 176px 0 112px 0;
-}
-
 .text-center{
 	text-align: center;
 }
@@ -44,27 +39,29 @@ bace
 }
 
 .section-title__en{
-	font-size: 2.4rem;
+	font-size: 2rem;
+	letter-spacing: 0.043em;
 	text-transform: uppercase;
-	margin-bottom: 32px;
+	margin-bottom: 18px;
 }
 
 .section-title__ja{
+	line-height: 1.25;
 	font-size: 3.2rem;
-	margin-bottom: 56px;
+	margin-bottom: 60px;
 }
 
 .section-subtitle{
 	font-size: 2.4rem;
-	margin-bottom: 24px;
+	margin-bottom: 17px;
 }
 
 .section__p{
-	font-family: 'Perpetua','ヒラギノ明朝 ProN W3','a-otf-ryumin-pr6n', sans-serif;
 	color: #ffffff;
 	font-size: 1.6rem;
 	letter-spacing: -0.004em;
 	line-height: 1.3125;
+	font-weight: lighter;
 	margin-bottom: 16px;
 }
 
@@ -78,12 +75,15 @@ bace
 }
 
 .en{
-	font-size: 2rem;
 	text-transform: uppercase;
 }
 
 .img__pc{
 	opacity: 0;
+	display: none;
+}
+
+.__br{
 	display: none;
 }
 /*＝＝＝＝＝＝＝＝＝＝
@@ -105,22 +105,20 @@ a>.sns:last-of-type{
 	margin-left: 16px;
 }
 
-
-
 /*＝＝＝＝＝＝＝＝＝＝
 btn
 ＝＝＝＝＝＝＝＝＝＝＝*/
 
 .btn{
-	padding: 6px 0 2px;
+	padding: 7px 0 2px;
 	margin: 0 auto;
 	border: 1px solid #ffffff;
 	width: 269px;
 }
 
 .btn span{
-	font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
 	line-height: 1;
+	font-weight: lighter;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -134,30 +132,28 @@ btn
 	width: 34px;
 	height: 28px;
 	z-index: 50;
-
-
 }
 
 .btn-menu{
-	font-family: 'Perpetua','a-otf-ryumin-pr6n', sans-serif;
+	font-family: 'brigade','a-otf-ryumin-pr6n', sans-serif;
 	letter-spacing: 0.07rem;
 	display: block;
 	position: absolute;
 	line-height: 1rem;
 	color: #ffffff;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	top: 15px;
 }
 
 .btn-trigger .menu{
-	width: 34px;
 	opacity: 1;
 	transition: all 0.5s;
 }
 
 .btn-trigger .close{
 	display: block;
+	letter-spacing: 0.04rem;
 	transition: all 0.5s;
 	opacity: 0;
 }
@@ -169,9 +165,9 @@ btn
 .btn-trigger.active .close{
 	font-size: 1.1rem;
 	opacity: 1;
-	top: 24px;
+	top: 28px;
+	left: -2px;
 }
-
 
 .btn-nav-line{
 	position: absolute;
@@ -200,7 +196,6 @@ btn
 	transform: rotate(-45deg) ;
 	top: 9px;
 }
-
 
 /*＝＝＝＝＝＝＝＝＝＝
 header
@@ -248,7 +243,6 @@ navigation
 	width: 80%;
 }
 
-
 /*＝＝＝＝＝＝＝＝＝＝
 container
 ＝＝＝＝＝＝＝＝＝＝＝*/
@@ -289,9 +283,11 @@ background-effect
 }
 
 
-/* eyecatch */
+/*＝＝＝＝＝＝＝＝＝＝
+eyecatch
+＝＝＝＝＝＝＝＝＝＝＝*/
 .eyecatch{
-	padding: 64px 0 144px 0;
+	padding: 64px 0 48px 0;
 	background-image: url(../img/top-bgi__sp.jpg);
 	background-size: cover;
 	background-position:center;
@@ -299,18 +295,27 @@ background-effect
 }
 
 .eyecatch-title{
-	margin-bottom: 80px;
-	font-size: 3.2rem;
+	margin-bottom: 100px;
+	font-size: 2.8rem;
+	font-weight: lighter;
 	text-transform: uppercase;
 }
 
-/* .product{
-	position: absolute;
-	top: 0;
-}  */
+/*＝＝＝＝＝＝＝＝＝＝
+concept
+＝＝＝＝＝＝＝＝＝＝＝*/
+#concept .section-title__ja{
+	margin-left: -4px;
+}
 
+/*＝＝＝＝＝＝＝＝＝＝
+reason
+＝＝＝＝＝＝＝＝＝＝＝*/
+.reason.inner{
+	padding: 0;
+	margin: 157px 0 112px 0;
+}
 
-/* reason */
 .reason .flex{
 	flex-shrink: 0;
 	justify-content: space-between;
@@ -318,12 +323,15 @@ background-effect
 
 .reason-list{
 	padding-left: 36px;
-	width: 62%;
 }
 
 .reason-product{
 	margin: 0 0 0 24px;
-	max-width: 81px;
+	width: auto;
+}
+
+.reason-product__img{
+	width: auto;
 }
 
 .reason .section-title__en{
@@ -342,7 +350,9 @@ background-effect
 	margin-bottom: 24px;
 }
 
-/* effect */
+/*＝＝＝＝＝＝＝＝＝＝
+effect
+＝＝＝＝＝＝＝＝＝＝＝*/
 .effect{
 	background-image: url(../img/effect-bgi__sp.jpg);
 	background-size: cover;
@@ -353,7 +363,13 @@ background-effect
 	padding: 80px 36px;
 }
 
-/* for you */
+.effect .section__p:last-of-type{
+	margin-bottom: 0;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝
+for you
+＝＝＝＝＝＝＝＝＝＝＝*/
 .inner.for-you{
 	margin: 112px 0 176px;
 	margin-top: 112px;
@@ -366,7 +382,7 @@ background-effect
 .for-you__img{
 	display: block;
 	margin: 0 auto 12px;
-	width: 218px;
+	width: 61.8%;
 }
 
 .for-you-list{
@@ -378,7 +394,9 @@ background-effect
 	font-size: 2rem;
 }
 
-/* ProdInfo */
+/*＝＝＝＝＝＝＝＝＝＝
+product
+＝＝＝＝＝＝＝＝＝＝＝*/
 .Product__img{
 	width: 26.1467%;
 	height: auto;
@@ -390,18 +408,18 @@ background-effect
 }
 
 .ProdInfo .section-title__ja{
-	margin-bottom: 0;
+	margin-bottom: 20px;
 }
 
 .ProdInfo .name{
-	margin: 32px auto 56px;
-	font-size: 3.2rem;
+	margin: 0 auto 47px;
+	font-size: 2.6rem;
 	text-transform: uppercase;
 }
 
 .ProdInfo-detail{
-	font-family: 'a-otf-ryumin-pr6n', sans-serif;
 	font-size: 2.4rem;
+	font-weight: lighter;
 }
 
 .ProdInfo-detail:first-of-type{
@@ -412,12 +430,18 @@ background-effect
 	display: none;
 }
 
+.ProdInfo-text .section__p:last-of-type{
+	margin-bottom: 20px;
+}
+
 .ProdInfo .btn{
 	box-sizing: border-box;
 	margin-top: 48px;
 }
 
-/* footer */
+/*＝＝＝＝＝＝＝＝＝＝
+footer
+＝＝＝＝＝＝＝＝＝＝＝*/
 .footer{
 	padding: 32px 0 16px;
 	background-color: #00123A;
@@ -425,6 +449,7 @@ background-effect
 
 .footer-name{
 	margin: 0 0 32px 0;
+	font-weight: lighter;
 }
 
 .footer .sns-area{
@@ -442,7 +467,7 @@ background-effect
 	＝＝＝＝＝＝＝＝＝＝＝*/
 	.inner{
 		box-sizing: border-box;
-		padding: 0 160px ;
+		padding: 0 12.5%;
 		margin: 96px auto;
 		width: 100%;
 		max-width: 1280px;
@@ -454,7 +479,7 @@ background-effect
 	}
 
 	.reason.inner{
-		padding: 0 160px;
+		padding: 0 12.5% ;
 		margin: 96px auto;
 	}
 
@@ -480,19 +505,21 @@ background-effect
 	}
 
 	.section-title__en{
-		font-size: 5.6rem;
+		letter-spacing: 0.03em;
+		font-size: 4.8rem;
 		text-transform: uppercase;
-		margin-bottom: 56px;
+		margin-bottom: 42px;
 	}
 
 	.section-title__ja{
 		letter-spacing: 0.088em;
 		line-height: 1.1388;
 		font-size: 7.2rem;
-		margin-bottom: 96px;
+		margin-bottom: 75px;
 	}
 
 	.section-subtitle{
+		margin-bottom: 31px;
 		font-size: 4rem;
 	}
 
@@ -504,7 +531,7 @@ background-effect
 		font-size: 2rem;
 		letter-spacing: 0.007em;
 		line-height: 1.05;
-		margin-bottom: 16px;
+		margin-bottom: 10px;
 	}
 
 	.img__sp{
@@ -528,7 +555,7 @@ background-effect
 	＝＝＝＝＝＝＝＝＝＝＝*/
 
 	.btn{
-		padding: 6px 0 2px;
+		padding: 7px 0 2px;
 		margin: 0 auto;
 		border: 1px solid #ffffff;
 		width: 269px;
@@ -554,13 +581,14 @@ background-effect
 
 	.eyecatch-title{
 		font-size: 6.4rem;
-		margin-bottom: 28px;
+		margin-bottom: 86px;
 	}
 
-	.product{
-		display: block;
-		margin: 0 auto;
-		width: 50%;
+	/*＝＝＝＝＝＝＝＝＝＝
+	concept
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	#concept .section-title__ja{
+		margin-left: -10px;
 	}
 
 	/*＝＝＝＝＝＝＝＝＝＝
@@ -576,14 +604,15 @@ background-effect
 
 	.reason-list{
 		padding-left: 0;
-	}
-
-	.reason-product__img{
-		width: auto;
+		max-width: 592px;
 	}
 
 	.reason .flex{
 		padding-bottom: 48px;
+	}
+
+	.reason-product{
+		margin-left: 14.7%;
 	}
 
 	/*＝＝＝＝＝＝＝＝＝＝
@@ -593,7 +622,6 @@ background-effect
 		background-image: url(../img/effect-bgi__pc.jpg);
 		background-position: bottom;
 	}
-
 
 	/*＝＝＝＝＝＝＝＝＝＝
 	for you
@@ -636,10 +664,10 @@ background-effect
 	}
 
 	.ProdInfo .name{
-		margin: 36px auto 120px;
-		font-size: 6.4rem;
+		margin: 0px auto 107px;
+		font-size: 5.2rem;
+		font-weight: lighter;
 		text-transform: uppercase;
-		line-height: 0.8;
 	}
 
 	.ProdInfo-text{
@@ -649,7 +677,8 @@ background-effect
 	}
 
 	.ProdInfo .section-title__ja{
-		line-height: 0.8;
+		margin-bottom: 15px;
+		line-height: 1.2;
 	}
 
 	.ProdInfo-text .section__p:nth-child(n+3){
@@ -663,7 +692,7 @@ background-effect
 	}
 
 	.Product__img{
-		margin: 0 9.1% 0;
+		margin: 0 7%;
 		width: auto;
 	}
 
@@ -679,14 +708,25 @@ background-effect
 		font-size: 6.4rem;
 		margin-bottom: 56px;
 	}
+}
 
+@media screen and (min-width: 769px) and (max-width: 941px) {
+	/*＝＝＝＝＝＝＝＝＝＝
+	bace
+	＝＝＝＝＝＝＝＝＝＝＝*/
+	.__br{
+		display: block;
+	}
 
+	/*＝＝＝＝＝＝＝＝＝＝
+	product
+	＝＝＝＝＝＝＝＝＝＝＝*/
 
+	.ProdInfo-text{
+		margin-left: 0;
+	}
 
-
-
-
-
-
-
+	.Product__img{
+		margin-right: 0;
+	}
 }
