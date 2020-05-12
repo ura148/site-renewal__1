@@ -87,8 +87,8 @@ $(window).on('load resize scroll',function(){
         // productエリアの調整
         //
         $("#ProdInfo-text-area").css("height",productTextAreaH),
-        productImg.css("height",productTextAreaH),
-        productTextArea.css("width",productFlexW - productImgW);
+        productImg.css("height",productTextAreaH);
+  
         //
         //
         // ===============================
