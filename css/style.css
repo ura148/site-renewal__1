@@ -92,35 +92,73 @@ loading animation
 #loading-animation {
   width: 100vw;
   height: 100vh;
-  transition: all 1s;
-  background-color: #0bd;
+  background-color: #00123A;
   position: fixed;
-  /* fixedにすることで読み込み終わった後にページの一番最初が表示される様にする */
-  top: 0;
-  left: 0;
   z-index: 9999;
 }
 
-.animation {
-  width: 100px;
-  height: 100px;
-  margin: 200px auto;
-  background-color: #fff;
+.drop-water {
+	position: absolute;
+	top: calc(50% - 2.5vw);
+	left: calc(50% - 20vw);
+	transform: translateX(-50%) translateY(-50%);
+  width: 40vw;
+  height: 5vw;
+  border: solid 2px #fff;
   border-radius: 100%;
-  animation: scaleout 1.0s infinite ease-in-out;
-  /* scaleoutはkeyframesで指定したanimationの名前。作ったanimationの中で使いたいものを書く */
-  /* infiniteは無限に繰り返すという指示 */
-  /* easy-in-outは はじめと終わり付近animationの動きを緩やかにするという意味*/
-
 }
-/* ローディングアニメーション */
-@keyframes scaleout {
+.water1{
+	animation: drop1 2.0s infinite ease-in-out;
+}
+
+.water2{
+	animation: drop2 2.0s infinite ease-in-out;
+}
+
+.water3{
+	animation: drop3 2.0s infinite ease-in-out;
+}
+
+.water4{
+	animation: drop4 2.0s infinite ease-in-out;
+}
+
+@keyframes drop1 {
   0% {
     transform: scale(0);
-    /* 0%（始まり）の時の大きさは0 */
+  	box-shadow: 0 0 100px inset #3f3f3f;
   } 100% {
-    transform: scale(1.5);
-    /* 100％（終わり）の時の大きさは1.5倍 */
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes drop2 {
+  0% {
+    transform: scale(0);
+  	box-shadow: 0 0 100px inset #3f3f3f;
+  } 100% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}
+
+@keyframes drop3 {
+  0% {
+    transform: scale(0);
+  	box-shadow: 0 0 100px inset #3f3f3f;
+  } 100% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
+
+@keyframes drop4 {
+  0% {
+    transform: scale(0);
+  	box-shadow: 0 0 100px inset #3f3f3f;
+  } 100% {
+    transform: scale(0.1);
     opacity: 0;
   }
 }
@@ -129,6 +167,8 @@ loading animation
   opacity: 0;
   visibility: hidden;
 }
+
+
 /*＝＝＝＝＝＝＝＝＝＝
 sns
 ＝＝＝＝＝＝＝＝＝＝＝*/

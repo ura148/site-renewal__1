@@ -1,17 +1,19 @@
 // ==============================
+// 初期処理が終わるまでのアニメーション
+//
+    window.onload = () => {
+    // ページのコンテンツを全て読み込み終わった後に実行する処理
+
+    let animation = document.getElementById('loading-animation');
+    // spinner という箱に #loading-animation を入れる
+
+    animation.classList.add('loaded');
+    // animation に対してclass loaded を追加する
+    };
+
+// ==============================
 // 初期処理
 //
-window.onload = function() {
-// ページのコンテンツを全て読み込み終わった後に実行する処理
-
-  let animation = document.getElementById('loading-animation');
-  // spinner という箱に #loading-animation を入れる
-
-  animation.classList.add('loaded');
-  // animation に対してclass loaded を追加する
-};
-
-
 $(window).on('load resize scroll',function(){
   let contentsBox = $("#main-container"),
       contensHeight =contentsBox.height(),
