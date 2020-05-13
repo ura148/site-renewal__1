@@ -6,6 +6,7 @@ $(window).on('load resize scroll',function(){
   let contentsBox = $("#main-container"),
       contensHeight =contentsBox.height(),
       windowW = $(window).width(),
+      windowH = $(window).height(),
       deviceW = 768,
       main = $("#main"),
       // reason areaについての取得情報
@@ -48,7 +49,8 @@ $(window).on('load resize scroll',function(){
       }else{
         // 768pxより大きい時の処理
 
-        let productTextArea = $("#ProdInfo-text-area"),
+        let eyecatchBox = $(".eyecatch-box"),
+            productTextArea = $("#ProdInfo-text-area"),
             productText1st = $("#ProdInfo-txt"),
             productBtn = $("#ProdInfo__btn"),
             productImg = $("#Product__img"),
@@ -56,10 +58,12 @@ $(window).on('load resize scroll',function(){
             productFlexW = productFlex.width(),
             productImgW = productImg.width(),
             productBtnH = productBtn.outerHeight(),
+            eyeCatchPosTO = eyecatchBox.offset().top,
             productText1stPosTO = productText1st.offset().top,
             productBtnPosTO = productBtn.offset().top,
             productBtnPosBottom = productBtnPosTO + productBtnH,
-            productTextAreaH = productBtnPosBottom - productText1stPosTO;
+            productTextAreaH = productBtnPosBottom - productText1stPosTO,
+            eyecatchBoxH = windowH - eyeCatchPosTO;
 
         // ==============================
         //気泡の画像サイズを調整する
@@ -68,6 +72,13 @@ $(window).on('load resize scroll',function(){
         //
         //
         // ===============================
+
+        // ==============================
+        //eyecatchの画像サイズ変更
+        //
+        $(".eyecatch").css("padding-bottom",eyecatchBoxH),
+        $("#eyecatch-img__pc").css("height",eyecatchBoxH);
+
 
 
         // ==============================
@@ -88,7 +99,7 @@ $(window).on('load resize scroll',function(){
         //
         $("#ProdInfo-text-area").css("height",productTextAreaH),
         productImg.css("height",productTextAreaH);
-  
+
         //
         //
         // ===============================

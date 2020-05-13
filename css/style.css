@@ -577,12 +577,22 @@ footer
 
 	.eyecatch{
 		background-image: url(../img/top-bgi.jpg);
+		padding: 0;
 	}
 
 	.eyecatch-title{
 		font-size: 6.4rem;
-		margin-bottom: 86px;
+		margin: 64px 0 86px;
 	}
+
+	#eyecatch-img__pc{
+		position: absolute;
+		left: 50%;
+    transform: translatex(-50%);
+    width: auto;
+    margin: 0 auto;
+	}
+
 
 	/*＝＝＝＝＝＝＝＝＝＝
 	concept
