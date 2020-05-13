@@ -87,6 +87,49 @@ bace
 	display: none;
 }
 /*＝＝＝＝＝＝＝＝＝＝
+loading animation
+＝＝＝＝＝＝＝＝＝＝＝*/
+#loading-animation {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #0bd;
+  position: fixed;
+  /* fixedにすることで読み込み終わった後にページの一番最初が表示される様にする */
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.animation {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: scaleout 1.0s infinite ease-in-out;
+  /* scaleoutはkeyframesで指定したanimationの名前。作ったanimationの中で使いたいものを書く */
+  /* infiniteは無限に繰り返すという指示 */
+  /* easy-in-outは はじめと終わり付近animationの動きを緩やかにするという意味*/
+
+}
+/* ローディングアニメーション */
+@keyframes scaleout {
+  0% {
+    transform: scale(0);
+    /* 0%（始まり）の時の大きさは0 */
+  } 100% {
+    transform: scale(1.5);
+    /* 100％（終わり）の時の大きさは1.5倍 */
+    opacity: 0;
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+/*＝＝＝＝＝＝＝＝＝＝
 sns
 ＝＝＝＝＝＝＝＝＝＝＝*/
 .sns{
