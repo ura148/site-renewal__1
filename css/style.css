@@ -92,6 +92,7 @@ loading animation
 #loading-animation {
   width: 100vw;
   height: 100vh;
+  transition: all 1s;
   background-color: #00123A;
   position: fixed;
   z-index: 9999;
