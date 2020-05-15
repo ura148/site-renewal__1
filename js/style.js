@@ -48,6 +48,8 @@ $(window).on('load resize scroll',function(){
         // reasonエリアのサイズ調整
         //
         $(".reason-product__img").css("height",reasontextAreaH),
+        reasonflex.css("height",reasontextAreaH),
+        reasonImgArea.css('transform', 'translateY( 0 )');
 
         // ==============================
         // productエリアのサイズ調整
