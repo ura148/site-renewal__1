@@ -39,9 +39,6 @@ $(window).on('load resize scroll',function(){
       $("#background-effect").css("height",contensHeight);
         if(windowW <= deviceW){
         // 768px以下の時の処理
-        let contensHeightSP = contensHeight + 160;
-        main.css("height",contensHeightSP);
-
         // ==============================
         // 気泡の画像サイズを調整
         //
