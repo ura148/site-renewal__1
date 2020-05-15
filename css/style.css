@@ -197,7 +197,7 @@ btn
 	padding: 7px 0 2px;
 	margin: 0 auto;
 	border: 1px solid #ffffff;
-	width: 269px;
+	max-width: 268px;
 }
 
 .btn span{
