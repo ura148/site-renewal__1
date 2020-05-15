@@ -49,6 +49,7 @@ $(window).on('load resize scroll',function(){
         //
         $(".reason-product__img").css("height",reasontextAreaH),
         reasonflex.css("height",reasontextAreaH),
+        reasontextArea.css("height",reasontextAreaH),
         reasonImgArea.css('transform', 'translateY( 0 )');
 
         // ==============================
