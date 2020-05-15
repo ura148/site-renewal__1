@@ -196,8 +196,9 @@ btn
 ＝＝＝＝＝＝＝＝＝＝＝*/
 
 .btn{
+	box-sizing: border-box;
 	padding: 7px 0 2px;
-	margin: 0 auto;
+	margin: 48px auto 0;
 	border: 1px solid #ffffff;
 	max-width: 268px;
 }
@@ -517,11 +518,6 @@ product
 	margin-bottom: 20px;
 }
 
-.ProdInfo .btn{
-	box-sizing: border-box;
-	margin-top: 48px;
-}
-
 /*＝＝＝＝＝＝＝＝＝＝
 footer
 ＝＝＝＝＝＝＝＝＝＝＝*/
@@ -619,13 +615,6 @@ footer
 	/*＝＝＝＝＝＝＝＝＝＝
 	btn
 	＝＝＝＝＝＝＝＝＝＝＝*/
-
-	.btn{
-		padding: 7px 0 2px;
-		margin: 0 auto;
-		border: 1px solid #ffffff;
-		width: 269px;
-	}
 
 	/*＝＝＝＝＝＝＝＝＝＝
 	container
