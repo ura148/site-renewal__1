@@ -548,8 +548,8 @@ footer
 	＝＝＝＝＝＝＝＝＝＝＝*/
 	.inner{
 		box-sizing: border-box;
-		padding: 0 12.5%;
-		margin: 96px auto;
+		padding: 92px 12.5%;
+		margin: 0 auto;
 		width: 100%;
 		max-width: 1280px;
 	}
@@ -557,20 +557,6 @@ footer
 	#concept.inner{
 		padding-top: 184px;
 		margin-top: 0;
-	}
-
-	.reason.inner{
-		padding: 0 12.5% ;
-		margin: 96px auto;
-	}
-
-	.effect .inner{
-		padding: 96px 160px;
-	}
-
-	.inner.for-you{
-		margin: 112px auto 184px;
-		margin-top: 112px;
 	}
 
 	.footer.inner{
@@ -685,6 +671,9 @@ footer
 	/*＝＝＝＝＝＝＝＝＝＝
 	reason
 	＝＝＝＝＝＝＝＝＝＝＝*/
+	.inner.reason{
+		padding-right: 12.5%;
+	}
 	.reason .section-title__en{
 		margin-left: 0;
 	}
@@ -754,6 +743,10 @@ footer
 		flex-direction: row-reverse;
 	}
 
+	.prodInfo.inner{
+		padding: 92px 7.5%;
+	}
+
 	.ProdInfo .name{
 		margin: 0px auto 107px;
 		font-size: 5.2rem;
@@ -801,7 +794,7 @@ footer
 	}
 }
 
-@media screen and (min-width: 769px) and (max-width: 941px) {
+@media screen and (min-width: 768px) and (max-width: 941px) {
 	/*＝＝＝＝＝＝＝＝＝＝
 	bace
 	＝＝＝＝＝＝＝＝＝＝＝*/
