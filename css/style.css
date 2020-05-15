@@ -806,6 +806,10 @@ footer
 
 @media screen and (min-width: 1280px) {
 	.inner{
-		padding: 92px 160px
+		padding: 92px 160px;
+	}
+
+	.inner.reason{
+		padding-right: 160px;
 	}
 }
