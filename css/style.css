@@ -685,6 +685,7 @@ footer
 	.reason-list{
 		padding-left: 0;
 		max-width: 592px;
+		min-width: 480px;
 	}
 
 	.reason .flex{
@@ -812,5 +813,11 @@ footer
 
 	.Product__img{
 		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.inner{
+		padding: 92px 160px
 	}
 }
