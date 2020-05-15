@@ -416,6 +416,9 @@ reason
 	width: auto;
 }
 
+.reason-list{
+	min-width: 216px;
+}
 
 .section__p.last-p{
 	margin-bottom: 96px;
