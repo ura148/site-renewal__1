@@ -19,7 +19,7 @@ $(window).on('load resize scroll',function(){
       contensHeight =contentsBox.height(),
       windowW = $(window).width(),
       windowH = $(window).height(),
-      deviceW = 768,
+      deviceW = 767,
       main = $("#main"),
       // reason areaについての取得情報
       reasontextArea = $("#reason-list"),
@@ -38,7 +38,7 @@ $(window).on('load resize scroll',function(){
 
       $("#background-effect").css("height",contensHeight);
         if(windowW <= deviceW){
-        // 768px以下の時の処理
+        // 767px以下の時の処理
         // ==============================
         // 気泡の画像サイズを調整
         //
