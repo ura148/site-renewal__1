@@ -456,8 +456,16 @@ for you
 	margin: 0 auto 32px;
 }
 
+.for-you-list:last-child{
+	margin-bottom: 0;
+}
+
 .for-you .section__p{
 	font-size: 2rem;
+}
+
+.for-you .section__p{
+	margin-bottom: 0;
 }
 
 /*＝＝＝＝＝＝＝＝＝＝
