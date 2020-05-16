@@ -406,10 +406,6 @@ reason
 	justify-content: space-between;
 }
 
-.reason.inner{
-	padding-right: 0;
-}
-
 .reason-product{
 	margin: 0 0 0 24px;
 	width: auto;
