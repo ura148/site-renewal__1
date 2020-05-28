@@ -378,7 +378,7 @@ background-effect
 eyecatch
 ＝＝＝＝＝＝＝＝＝＝＝*/
 .eyecatch{
-	padding: 64px 0 48px 0;
+	padding: 64px 0 0 0;
 	background-image: url(../img/top-bgi__sp.jpg);
 	background-size: cover;
 	background-position:center;

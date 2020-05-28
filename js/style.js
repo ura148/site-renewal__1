@@ -16,33 +16,43 @@
 //
 $(window).on('load resize scroll',function(){
   let contentsBox = $("#main-container"),
+      eyecatchBox = $(".eyecatch-box");
+      eyecatchImgSp = $("#eyecatch-img__sp")
       contensHeight =contentsBox.height(),
       windowW = $(window).width(),
       windowH = $(window).height(),
-      deviceW = 767,
+      deviceW = 768,
       main = $("#main"),
       // reason areaについての取得情報
       reasontextArea = $("#reason-list"),
       reasontextLast = $("#reason-text-last"),
       reasonImgArea = $("#reason-product"),
       reasonflex = $("#reason-flex"),
+      eyeCatchPosTO = eyecatchBox.offset().top,
       reasontextAreaPosTO = reasontextArea.offset().top,
       reasontextLastPosTO = reasontextLast.offset().top,
       reasonflexW = reasonflex.width(),
       reasonImgAreaW = reasonImgArea.width(),
+      eyecatchImgSpH = eyecatchImgSp.height();
       reasontextLastH = reasontextLast.height(),
       reasontextLastBottom = reasontextLastPosTO + reasontextLastH,
       reasontextAreaH = reasontextLastBottom - reasontextAreaPosTO;
+      eyecatchBoxH = windowH - eyeCatchPosTO;
+      eyecatchBoxHsp = windowH - eyeCatchPosTO - eyecatchImgSpH;
+
 
       main.css("height",contensHeight);
 
       $("#background-effect").css("height",contensHeight);
         if(windowW <= deviceW){
-        // 767px以下の時の処理
+        // 768px以下の時の処理
         // ==============================
         // 気泡の画像サイズを調整
         //
         $(".background-effect__img").css("width",windowW * 4);
+        // ==============================
+        // eyecatchエリアサイズ調整
+        $(".eyecatch").css("padding-bottom",eyecatchBoxHsp),
 
         // ==============================
         // reasonエリアのサイズ調整
@@ -61,7 +71,7 @@ $(window).on('load resize scroll',function(){
       }else{
         // 768pxより大きい時の処理
 
-        let eyecatchBox = $(".eyecatch-box"),
+        let
             productTextArea = $("#ProdInfo-text-area"),
             productText1st = $("#ProdInfo-txt"),
             productBtn = $("#ProdInfo__btn"),
@@ -74,8 +84,8 @@ $(window).on('load resize scroll',function(){
             productText1stPosTO = productText1st.offset().top,
             productBtnPosTO = productBtn.offset().top,
             productBtnPosBottom = productBtnPosTO + productBtnH,
-            productTextAreaH = productBtnPosBottom - productText1stPosTO,
-            eyecatchBoxH = windowH - eyeCatchPosTO;
+            productTextAreaH = productBtnPosBottom - productText1stPosTO;
+
 
         // ==============================
         //気泡の画像サイズを調整する
