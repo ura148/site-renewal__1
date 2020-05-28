@@ -88,6 +88,11 @@ bace
 .__br{
 	display: none;
 }
+
+.br__pc{
+	display: none;
+}
+
 /*＝＝＝＝＝＝＝＝＝＝
 loading animation
 ＝＝＝＝＝＝＝＝＝＝＝*/
@@ -589,7 +594,7 @@ footer
 		font-size: 2rem;
 		letter-spacing: 0.007em;
 		line-height: 1.05;
-		margin-bottom: 10px;
+		margin-bottom: 16px;
 	}
 
 	.img__sp{
@@ -598,6 +603,10 @@ footer
 
 	.img__pc{
 		opacity: 1;
+		display: block;
+	}
+
+	.br__pc{
 		display: block;
 	}
 
