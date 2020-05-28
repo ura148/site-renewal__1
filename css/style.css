@@ -523,6 +523,7 @@ product
 footer
 ＝＝＝＝＝＝＝＝＝＝＝*/
 .footer{
+	max-width: none;
 	padding-bottom: 16px;
 	background-color: #00123A;
 }
