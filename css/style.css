@@ -347,8 +347,8 @@ container
 }
 
 .main-container{
+	position: relative;
 	width: 100%;
-	position: absolute;
 	overflow: hidden;
 }
 
@@ -364,7 +364,7 @@ background-effect
 }
 
 .background-effect__box{
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 }
@@ -626,7 +626,6 @@ footer
 	＝＝＝＝＝＝＝＝＝＝＝*/
 	.main-container{
 		width: 100%;
-		position: absolute;
 		padding: 0 0 0;
 		overflow: hidden;
 	}
