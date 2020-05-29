@@ -437,13 +437,40 @@ reason
 effect
 ＝＝＝＝＝＝＝＝＝＝＝*/
 .effect{
-	background-image: url(../img/effect-bgi__sp.jpg);
+	background-image: url(../img/sea.jpg);
 	background-size: cover;
 	background-position:center;
 }
 
+.effect .inner::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+  width: 120%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+	z-index:1;
+}
+
+.effect .inner{
+	position: relative;
+}
+
+.effect__text{
+	position: relative;
+	z-index: 5;
+}
+
 .effect .section__p:last-of-type{
 	margin-bottom: 0;
+}
+
+.effect__img{
+	position: absolute;
+	right: -30%;
+	bottom: 0;
+	width: 80%;
 }
 
 /*＝＝＝＝＝＝＝＝＝＝
@@ -698,8 +725,15 @@ footer
 	effect
 	＝＝＝＝＝＝＝＝＝＝＝*/
 	.effect{
-		background-image: url(../img/effect-bgi__pc.jpg);
+		background-image: url(../img/sea.jpg);
 		background-position: bottom;
+	}
+
+	.effect__img{
+		position: absolute;
+		right: -110px;
+		bottom: 0;
+		width: 50%;
 	}
 
 	/*＝＝＝＝＝＝＝＝＝＝
