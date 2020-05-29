@@ -445,9 +445,9 @@ effect
 .effect .inner::before{
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -50%;
 	content: "";
-  width: 120%;
+  width: 200vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.45);
 	z-index:1;
