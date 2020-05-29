@@ -7,12 +7,11 @@ $(window).on({
 ;
   },
   "load resize":function(){
+    eyecatchSet();
     loadingAnimation();
     reasonAreaSet();
-    eyecatchSet();
     bubbleSize();
     productArea();
-
   },
   "scroll":function(){
     bubbleMove();
@@ -59,20 +58,22 @@ let eyecatchSet = function(){
       eyecatchImgSpTO = eyecatchImgSp.offset().top;
       eyeCatchPosTO = eyecatchBox.offset().top;
       eyecatchImgSpH = eyecatchImgSp.height();
-      // yecatchImgSpMaxH = 100vh - eyecatchImgSpTO;
+      // eyecatchImgSpMaxH = 100vh - eyecatchImgSpTO;
       eyecatchBoxH = windowH - eyeCatchPosTO;
-      eyecatchBoxHsp = windowH - eyecatchImgSpH;
+      eyecatchBoxHsp = windowH - eyeCatchPosTO - eyecatchImgSpH;
 
-      console.log(eyecatchImgSpH);
-      console.log(windowH);
 
       if(windowW <= deviceW){
+        if(eyecatchBoxHsp < 0){
+          $(".eyecatch").css("padding-bottom",0);
+        }else{
         $(".eyecatch").css("padding-bottom",eyecatchBoxHsp);
-        console.log("sp");
+
+        }
       }else{
         $(".eyecatch").css("padding-bottom",eyecatchBoxH);
         $("#eyecatch-img__pc").css("height",eyecatchBoxH);
-        console.log("pc");
+
       }
 }
 
@@ -82,14 +83,16 @@ let reasonAreaSet = function(){
       reasontextArea = $("#reason-list");
       reasontextLast = $("#reason-text-last");
       reasonImgArea = $("#reason-product");
+      reasonImgArea = $(".reason-product__img");
       reasonflex = $("#reason-flex");
       reasontextAreaPosTO = reasontextArea.offset().top;
       reasontextLastPosTO = reasontextLast.offset().top;
       reasonflexW = reasonflex.width();
-      reasonImgAreaW = reasonImgArea.width();
       reasontextLastH = reasontextLast.height();
       reasontextLastBottom = reasontextLastPosTO + reasontextLastH;
       reasontextAreaH = reasontextLastBottom - reasontextAreaPosTO;
+      $(".reason-product__img").css("height",reasontextAreaH * 1.1961);
+      reasonImgAreaW = reasonImgArea.innerWidth();
 
       if(windowW <= deviceW){
         reasonflex.css("height",reasontextAreaH);
@@ -114,20 +117,23 @@ let productArea = function(){
   if(windowW <= deviceW){
     $("#ProdInfo-text-area").css("height","auto");
     $("#Product__img").css("height","auto");
+    productImg.css("width","26.1467%");
 
   }else{
   let productText1st = $("#ProdInfo-txt");
       productBtn = $("#ProdInfo__btn");
       productFlex = $("#Product-flex");
       productFlexW = productFlex.width();
-      productImgW = productImg.width();
       productBtnH = productBtn.outerHeight();
       productText1stPosTO = productText1st.offset().top;
       productBtnPosTO = productBtn.offset().top;
       productBtnPosBottom = productBtnPosTO + productBtnH;
       productTextAreaH = productBtnPosBottom - productText1stPosTO;
+      productImgW = productImg.width();
 
-    productImg.css("height",productTextAreaH);
+      productImg.css("height",productTextAreaH);
+      productImg.css("width","auto");
+
   }
 }
 
